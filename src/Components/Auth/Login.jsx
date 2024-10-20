@@ -11,8 +11,8 @@ export default function Login(){
         setEmail("");
     }
     return (
-        <div className="flex justify-center items-center h-full">
-            <div className='w-96 m-auto border-[1px] border-emerald-500 rounded-lg p-4'>
+        <div className="flex justify-center items-center min-h-screen">
+            <div className='w-96 m-auto border-[1px] border-zinc-700 rounded-lg p-4'>
                 <h4 className="text-lg font-medium flex justify-center mb-4">Login Page</h4>
                 <form onSubmit={(e)=>submithandler(e)} className="flex flex-col justify-center items-center gap-4">
                     <input

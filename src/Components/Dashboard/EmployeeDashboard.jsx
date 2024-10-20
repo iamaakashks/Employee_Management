@@ -5,7 +5,7 @@ import TaskList from '../TaskList/TaskList';
 
 export default function EmployeeDashboard(){
     return (
-        <div className="h-full w-full">
+        <div className="min-h-screen w-full">
             <Header />
             <TaskListNumbers />
             <TaskList />
