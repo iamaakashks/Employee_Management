@@ -3,12 +3,13 @@ import Header from '../others/Header';
 import TaskListNumbers from '../others/TaskListNumbers';
 import TaskList from '../TaskList/TaskList';
 
-export default function EmployeeDashboard(){
+export default function EmployeeDashboard({data}){
+    console.log(data);
     document.title = "Employee Dashboard";
     return (
         <div className="min-h-screen w-full">
-            <Header />
-            <TaskListNumbers />
+            <Header data={data}/>
+            <TaskListNumbers data = {data}/>
             <TaskList />
         </div>
     )

@@ -26,7 +26,7 @@ const CreateTask = () => {
             <input
               className="w-full outline-none bg-transparent border-[1px] border-zinc-700 px-2 py-1.5 rounded-md"
               type="text"
-              placeholder="Employee Name"
+              placeholder="Employee id"
             />
           </div>
           <div>

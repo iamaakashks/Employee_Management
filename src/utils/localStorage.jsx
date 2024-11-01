@@ -9,8 +9,9 @@ const admin = [
   const employee = [
     {
       "id": 101,
+      "firstName": "Alice",
       "email": "employee1@example.com",
-      "password": "employee123",
+      "password": "123",
       "tasks": [
         {
           "active": true,
@@ -32,12 +33,19 @@ const admin = [
           "date": "2024-10-18",
           "category": "Development"
         }
-      ]
+      ],
+      "taskSummary": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 0
+      }
     },
     {
       "id": 102,
+      "firstName": "Bob",
       "email": "employee2@example.com",
-      "password": "employee456",
+      "password": "123",
       "tasks": [
         {
           "active": true,
@@ -59,12 +67,19 @@ const admin = [
           "date": "2024-10-25",
           "category": "Presentation"
         }
-      ]
+      ],
+      "taskSummary": {
+        "active": 2,
+        "newTask": 1,
+        "completed": 0,
+        "failed": 0
+      }
     },
     {
       "id": 103,
+      "firstName": "Charlie",
       "email": "employee3@example.com",
-      "password": "employee789",
+      "password": "123",
       "tasks": [
         {
           "active": false,
@@ -86,12 +101,19 @@ const admin = [
           "date": "2024-10-26",
           "category": "Research"
         }
-      ]
+      ],
+      "taskSummary": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 0
+      }
     },
     {
       "id": 104,
+      "firstName": "Diana",
       "email": "employee4@example.com",
-      "password": "employee101",
+      "password": "123",
       "tasks": [
         {
           "active": true,
@@ -113,12 +135,19 @@ const admin = [
           "date": "2024-10-21",
           "category": "Feedback"
         }
-      ]
+      ],
+      "taskSummary": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 0,
+        "failed": 1
+      }
     },
     {
       "id": 105,
+      "firstName": "Eve",
       "email": "employee5@example.com",
-      "password": "employee202",
+      "password": "123",
       "tasks": [
         {
           "active": true,
@@ -140,12 +169,19 @@ const admin = [
           "date": "2024-10-24",
           "category": "Testing"
         }
-      ]
+      ],
+      "taskSummary": {
+        "active": 2,
+        "newTask": 1,
+        "completed": 0,
+        "failed": 0
+      }
     },
     {
       "id": 106,
+      "firstName": "Frank",
       "email": "employee6@example.com",
-      "password": "employee303",
+      "password": "123",
       "tasks": [
         {
           "active": true,
@@ -167,9 +203,16 @@ const admin = [
           "date": "2024-10-19",
           "category": "Report"
         }
-      ]
+      ],
+      "taskSummary": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 0
+      }
     }
-  ]
+  ];
+  
   
 export const setLocalStorage = ()=>{
     localStorage.setItem("employees", JSON.stringify(employee));
