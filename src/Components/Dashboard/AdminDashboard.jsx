@@ -7,7 +7,7 @@ const AdminDashboard = ({data}) => {
   document.title = "Admin Dashboard";
   return (
     <div className="w-full min-h-screen">
-        <Header />
+        <Header data={data}/>
         <CreateTask />
         <AllTask />
     </div>

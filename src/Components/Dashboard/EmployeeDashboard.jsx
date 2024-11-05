@@ -4,7 +4,6 @@ import TaskListNumbers from '../others/TaskListNumbers';
 import TaskList from '../TaskList/TaskList';
 
 export default function EmployeeDashboard({data}){
-    console.log(data);
     document.title = "Employee Dashboard";
     return (
         <div className="min-h-screen w-full">
