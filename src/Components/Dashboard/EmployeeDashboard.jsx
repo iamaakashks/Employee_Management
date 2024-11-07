@@ -9,7 +9,7 @@ export default function EmployeeDashboard({data}){
         <div className="min-h-screen w-full">
             <Header data={data}/>
             <TaskListNumbers data = {data}/>
-            <TaskList />
+            <TaskList data={data}/>
         </div>
     )
 }

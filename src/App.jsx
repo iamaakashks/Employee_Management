@@ -7,15 +7,18 @@ const App = () => {
   const [user, setUser] = useState(null);
   const authData = useContext(AuthContext);
   const [loggedInUser, setLoggedInUser] = useState(null);
-  // useEffect(()=>{
-  //   if(authData){
-  //     const loggedInPerson = localStorage.getItem("loggedInPerson");
-  //     if(loggedInPerson){
-  //       setUser(loggedInPerson.role);
-  //     }
-  //   }
-  // }, [authData]);
+  
+  useEffect(()=>{
+    const loggedinuserdata = localStorage.getItem("loggedInPerson");
+    if(loggedinuserdata){
+      const userData = JSON.parse(loggedinuserdata);
+      setUser(userData.role);
+      setLoggedInUser(userData.data);
+    }
+  }, []);
+
   const handleLogin = (email, password)=>{
+
     if(authData && authData.admin.find((e)=>email == e.email && password == e.password)){
       setUser("admin")
       localStorage.setItem("loggedInPerson", JSON.stringify({role: "admin"}));
@@ -24,7 +27,7 @@ const App = () => {
       if(employee){
         setUser("employee")
         setLoggedInUser(employee)
-        localStorage.setItem("loggedInPerson", JSON.stringify({role: "employee"}));
+        localStorage.setItem("loggedInPerson", JSON.stringify({role: "employee", data: employee}));
       }
     }else{
       alert("invalid Credentials");
@@ -33,7 +36,7 @@ const App = () => {
   return (
     <div className="bg-zinc-900 w-full text-zinc-50">
       {!user? <Login handleLogin={handleLogin}/> : ""}
-      {user == "admin" && <AdminDashboard />}
+      {user == "admin" && <AdminDashboard data={loggedInUser} /> }
       {user == "employee" && <EmployeeDashboard data={loggedInUser} />}
     </div>
   )

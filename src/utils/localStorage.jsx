@@ -33,10 +33,20 @@ const admin = [
           "description": "Fix bugs in the user interface",
           "date": "2024-10-18",
           "category": "Development"
+        },
+        {
+          "active": true,
+          "newTask": false,
+          "completed": false,
+          "failed": false,
+          "title": "Task 3",
+          "description": "Update the project roadmap",
+          "date": "2024-10-28",
+          "category": "Planning"
         }
       ],
       "taskSummary": {
-        "active": 1,
+        "active": 2,
         "newTask": 1,
         "completed": 1,
         "failed": 0
@@ -67,12 +77,22 @@ const admin = [
           "description": "Prepare the feature demo",
           "date": "2024-10-25",
           "category": "Presentation"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": true,
+          "failed": false,
+          "title": "Task 3",
+          "description": "Review code for the new module",
+          "date": "2024-10-29",
+          "category": "Code Review"
         }
       ],
       "taskSummary": {
         "active": 2,
         "newTask": 1,
-        "completed": 0,
+        "completed": 1,
         "failed": 0
       }
     },
@@ -101,10 +121,20 @@ const admin = [
           "description": "Research new database structures",
           "date": "2024-10-26",
           "category": "Research"
+        },
+        {
+          "active": true,
+          "newTask": false,
+          "completed": false,
+          "failed": false,
+          "title": "Task 3",
+          "description": "Prepare database migration plan",
+          "date": "2024-10-30",
+          "category": "Planning"
         }
       ],
       "taskSummary": {
-        "active": 1,
+        "active": 2,
         "newTask": 1,
         "completed": 1,
         "failed": 0
@@ -135,11 +165,21 @@ const admin = [
           "description": "Implement feedback on logo design",
           "date": "2024-10-21",
           "category": "Feedback"
+        },
+        {
+          "active": true,
+          "newTask": true,
+          "completed": false,
+          "failed": false,
+          "title": "Task 3",
+          "description": "Prepare branding guidelines",
+          "date": "2024-10-30",
+          "category": "Design"
         }
       ],
       "taskSummary": {
-        "active": 1,
-        "newTask": 1,
+        "active": 2,
+        "newTask": 2,
         "completed": 0,
         "failed": 1
       }
@@ -169,12 +209,22 @@ const admin = [
           "description": "Prepare the test cases",
           "date": "2024-10-24",
           "category": "Testing"
+        },
+        {
+          "active": false,
+          "newTask": true,
+          "completed": true,
+          "failed": false,
+          "title": "Task 3",
+          "description": "Run regression tests",
+          "date": "2024-10-29",
+          "category": "Testing"
         }
       ],
       "taskSummary": {
         "active": 2,
         "newTask": 1,
-        "completed": 0,
+        "completed": 1,
         "failed": 0
       }
     },
@@ -203,16 +253,28 @@ const admin = [
           "description": "Submit the final report",
           "date": "2024-10-19",
           "category": "Report"
+        },
+        {
+          "active": true,
+          "newTask": true,
+          "completed": false,
+          "failed": false,
+          "title": "Task 3",
+          "description": "Refactor the front-end codebase",
+          "date": "2024-10-31",
+          "category": "Development"
         }
       ],
       "taskSummary": {
-        "active": 1,
-        "newTask": 1,
+        "active": 2,
+        "newTask": 2,
         "completed": 1,
         "failed": 0
       }
     }
-  ];
+];
+
+
   
   
 export const setLocalStorage = ()=>{
