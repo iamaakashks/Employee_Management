@@ -9,7 +9,7 @@ const admin = [
   
   const employee = [
     {
-      "id": 101,
+      "id": "EMP001",
       "firstName": "Alice",
       "email": "employee1@example.com",
       "password": "123",
@@ -19,7 +19,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": false,
-          "title": "Task 1",
+          "title": "Complete Project Documentation",
           "description": "Complete the project documentation",
           "date": "2024-10-21",
           "category": "Documentation"
@@ -29,7 +29,7 @@ const admin = [
           "newTask": false,
           "completed": true,
           "failed": false,
-          "title": "Task 2",
+          "title": "Fix UI Bugs",
           "description": "Fix bugs in the user interface",
           "date": "2024-10-18",
           "category": "Development"
@@ -39,7 +39,7 @@ const admin = [
           "newTask": false,
           "completed": false,
           "failed": false,
-          "title": "Task 3",
+          "title": "Update Project Roadmap",
           "description": "Update the project roadmap",
           "date": "2024-10-28",
           "category": "Planning"
@@ -53,7 +53,7 @@ const admin = [
       }
     },
     {
-      "id": 102,
+      "id": "EMP002",
       "firstName": "Bob",
       "email": "employee2@example.com",
       "password": "123",
@@ -63,7 +63,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": false,
-          "title": "Task 1",
+          "title": "Develop New Feature Module",
           "description": "Create a new feature module",
           "date": "2024-10-22",
           "category": "Development"
@@ -73,7 +73,7 @@ const admin = [
           "newTask": false,
           "completed": false,
           "failed": false,
-          "title": "Task 2",
+          "title": "Prepare Feature Demo",
           "description": "Prepare the feature demo",
           "date": "2024-10-25",
           "category": "Presentation"
@@ -83,7 +83,7 @@ const admin = [
           "newTask": false,
           "completed": true,
           "failed": false,
-          "title": "Task 3",
+          "title": "Review Code for New Module",
           "description": "Review code for the new module",
           "date": "2024-10-29",
           "category": "Code Review"
@@ -97,7 +97,7 @@ const admin = [
       }
     },
     {
-      "id": 103,
+      "id": "EMP003",
       "firstName": "Charlie",
       "email": "employee3@example.com",
       "password": "123",
@@ -107,7 +107,7 @@ const admin = [
           "newTask": false,
           "completed": true,
           "failed": false,
-          "title": "Task 1",
+          "title": "Optimize Database Queries",
           "description": "Optimize the database queries",
           "date": "2024-10-17",
           "category": "Database"
@@ -117,7 +117,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": false,
-          "title": "Task 2",
+          "title": "Research New Database Structures",
           "description": "Research new database structures",
           "date": "2024-10-26",
           "category": "Research"
@@ -127,7 +127,7 @@ const admin = [
           "newTask": false,
           "completed": false,
           "failed": false,
-          "title": "Task 3",
+          "title": "Prepare Database Migration Plan",
           "description": "Prepare database migration plan",
           "date": "2024-10-30",
           "category": "Planning"
@@ -141,7 +141,7 @@ const admin = [
       }
     },
     {
-      "id": 104,
+      "id": "EMP004",
       "firstName": "Diana",
       "email": "employee4@example.com",
       "password": "123",
@@ -151,7 +151,7 @@ const admin = [
           "newTask": false,
           "completed": false,
           "failed": false,
-          "title": "Task 1",
+          "title": "Design Project Logo",
           "description": "Design a new logo for the project",
           "date": "2024-10-20",
           "category": "Design"
@@ -161,7 +161,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": true,
-          "title": "Task 2",
+          "title": "Revise Logo Based on Feedback",
           "description": "Implement feedback on logo design",
           "date": "2024-10-21",
           "category": "Feedback"
@@ -171,7 +171,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": false,
-          "title": "Task 3",
+          "title": "Create Branding Guidelines",
           "description": "Prepare branding guidelines",
           "date": "2024-10-30",
           "category": "Design"
@@ -185,7 +185,7 @@ const admin = [
       }
     },
     {
-      "id": 105,
+      "id": "EMP005",
       "firstName": "Eve",
       "email": "employee5@example.com",
       "password": "123",
@@ -195,7 +195,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": false,
-          "title": "Task 1",
+          "title": "Test New API Endpoints",
           "description": "Test the new API endpoints",
           "date": "2024-10-23",
           "category": "Testing"
@@ -205,7 +205,7 @@ const admin = [
           "newTask": false,
           "completed": false,
           "failed": false,
-          "title": "Task 2",
+          "title": "Prepare Test Cases",
           "description": "Prepare the test cases",
           "date": "2024-10-24",
           "category": "Testing"
@@ -215,7 +215,7 @@ const admin = [
           "newTask": true,
           "completed": true,
           "failed": false,
-          "title": "Task 3",
+          "title": "Run Regression Tests",
           "description": "Run regression tests",
           "date": "2024-10-29",
           "category": "Testing"
@@ -229,7 +229,7 @@ const admin = [
       }
     },
     {
-      "id": 106,
+      "id": "EMP006",
       "firstName": "Frank",
       "email": "employee6@example.com",
       "password": "123",
@@ -239,7 +239,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": false,
-          "title": "Task 1",
+          "title": "Develop Front-End Application",
           "description": "Develop the front-end of the application",
           "date": "2024-10-27",
           "category": "Development"
@@ -249,7 +249,7 @@ const admin = [
           "newTask": false,
           "completed": true,
           "failed": false,
-          "title": "Task 2",
+          "title": "Submit Final Report",
           "description": "Submit the final report",
           "date": "2024-10-19",
           "category": "Report"
@@ -259,7 +259,7 @@ const admin = [
           "newTask": true,
           "completed": false,
           "failed": false,
-          "title": "Task 3",
+          "title": "Refactor Front-End Codebase",
           "description": "Refactor the front-end codebase",
           "date": "2024-10-31",
           "category": "Development"
@@ -273,6 +273,8 @@ const admin = [
       }
     }
 ];
+
+
 
 
   
