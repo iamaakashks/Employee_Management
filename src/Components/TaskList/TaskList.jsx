@@ -11,14 +11,14 @@ const TaskList = ({data}) => {
               if(item.newTask){
                 return <NewTask key={index} data={item} />
               }
-              if(item.failed){
-                return <Failed key={index} data={item} />
-              }
               if(item.active){
                 return <AcceptTask key={index} data={item} />
               }
               if(item.completed){
                 return <Completed key={index} data={item} />
+              }
+              if(item.failed){
+                return <Failed key={index} data={item} />
               }
             })
           }
