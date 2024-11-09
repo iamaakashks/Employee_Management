@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 
 const CreateTask = () => {
+  const [userData, setUserData] = useContext(AuthContext);
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [assignTo, setAssignTo] = useState("");
@@ -13,18 +15,19 @@ const CreateTask = () => {
     e.preventDefault();
 
     setTask({title, date, assignTo, category, description, active:false, newTask:true, completed:false, failed:false});
-    const data = JSON.parse(localStorage.getItem('employees'));
+    const data = userData;
     data.forEach((elem)=>{
       if(assignTo.toLowerCase() === elem.id.toLowerCase()){
         elem.tasks.push(task);
+        elem.taskSummary.newTask += 1;
       }
     })
-    localStorage.setItem('employees', JSON.stringify(data));
-  setTitle('');
-  setDate('');
-  setAssignTo('');
-  setCategory('');
-  setDescription('');
+    setUserData(data);
+  // setTitle('');
+  // setDate('');
+  // setAssignTo('');
+  // setCategory('');
+  // setDescription('');
   };
   return (
     <div className="px-20 mt-8">

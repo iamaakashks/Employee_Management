@@ -5,7 +5,7 @@ import AdminDashboard from "./Components/Dashboard/AdminDashboard.jsx";
 import { AuthContext } from "./context/AuthProvider.jsx";
 const App = () => {
   const [user, setUser] = useState(null);
-  const authData = useContext(AuthContext);
+  const [userData, setUserData] = useContext(AuthContext);
   const [loggedInUser, setLoggedInUser] = useState(null);
   
   useEffect(()=>{
@@ -19,11 +19,11 @@ const App = () => {
 
   const handleLogin = (email, password)=>{
 
-    if(authData && authData.admin.find((e)=>email == e.email && password == e.password)){
+    if(email=="admin@example.com" && password=="123"){
       setUser("admin")
       localStorage.setItem("loggedInPerson", JSON.stringify({role: "admin"}));
-    }else if(authData){
-      const employee = authData.employee.find((e)=> email == e.email && password == e.password);
+    }else if(userData){
+      const employee = userData.find((e)=> email == e.email && password == e.password);
       if(employee){
         setUser("employee")
         setLoggedInUser(employee)
