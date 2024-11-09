@@ -23,11 +23,11 @@ const CreateTask = () => {
       }
     })
     setUserData(data);
-  // setTitle('');
-  // setDate('');
-  // setAssignTo('');
-  // setCategory('');
-  // setDescription('');
+    setTitle('');
+    setDate('');
+    setAssignTo('');
+    setCategory('');
+    setDescription('');
   };
   return (
     <div className="px-20 mt-8">

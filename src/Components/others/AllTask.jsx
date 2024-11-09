@@ -3,7 +3,6 @@ import { AuthContext } from "../../context/AuthProvider";
 
 const AllTask = () => {
   const [userData, setUserData] = useContext(AuthContext);
-  console.log(userData.employee);
   return (
     <div className="px-20 mt-8">
       <h1 className="text-2xl font-semibold mb-4">Tasks</h1>

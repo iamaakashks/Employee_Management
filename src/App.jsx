@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div className="bg-zinc-900 w-full text-zinc-50 pb-4">
       {!user? <Login handleLogin={handleLogin}/> : ""}
-      {user == "admin" && <AdminDashboard changeUser={setUser} data={loggedInUser} /> }
+      {user == "admin" && <AdminDashboard changeUser={setUser} data={"admin"} /> }
       {user == "employee" && <EmployeeDashboard changeUser={setUser} data={loggedInUser} />}
     </div>
   )
